@@ -70,7 +70,7 @@ public class AppInitializer {
 	public DataSource dataSource() {
 		ComboPooledDataSource ds = new ComboPooledDataSource();
 		try {
-			ds.setDriverClass("com.mysql.jdbc.Driver");
+			ds.setDriverClass(this.environment.getProperty("db.driver"));
 			ds.setJdbcUrl(this.environment.getProperty("db.url"));
 			ds.setUser(this.environment.getProperty("db.user"));
 			ds.setPassword(this.environment.getProperty("db.password"));
