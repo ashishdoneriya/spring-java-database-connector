@@ -77,7 +77,7 @@ public class DBControls {
 		DBControls.initialize("dude", "root", "root");
 		DevoteeDao dao = DBControls.devoteeDao();
 		Devotee devotee = new Devotee();
-		devotee.setName("Hari");
+		devotee.setName("Haribol");
 		dao.save(devotee);
 	}
 
